@@ -1,0 +1,242 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+:root {
+    --primary-color: #E02C6D;
+    --text-primary-color: #3A3A3A;
+}
+
+header {
+    width: calc(100% - 200px);
+    margin: 50px auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav img {
+    height: 20px;
+    width: 20px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    list-style: none;
+    font-weight: 700;
+}
+
+nav ul li:hover {
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    color: wheat;
+}
+
+.title-1 {
+    color: #3A3A3A;
+    font-weight: 800;
+}
+
+/* banner section */
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.btn-primary {
+    padding: 10px;
+    width: 120px;
+    background-color: var(--primary-color);
+    color: wheat;
+    font-weight: 600;
+    border: none;
+}
+
+.btn-primary:hover {
+    width: 250px;
+    padding: 20px;
+    transition: 3s;
+    cursor: pointer;
+    background-color: #3A3A3A;
+}
+
+.banner-div-1 h2 {
+    color: var(--text-primary-color);
+    font-weight: 900;
+}
+
+.banner-div-1 p {
+    color: var(--text-primary-color);
+    padding:  20px 0px;
+    
+}
+
+.banner-div-2 {
+    background-image: url(../images/Circle\ design.svg  );
+}
+
+/* brand logo */
+.container-2 {
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 0px;
+    border: 1px solid #E02C6D;
+    padding: 30px;
+}
+
+/* main div */
+.container-3{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.title-2{
+    color: var(--text-primary-color);
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 40px;
+    
+}
+.card{
+    width: 329px;
+    height: 450px;
+    background-color: rgb(102, 235, 168);
+    padding: 15px;
+    border-radius: 5px;
+    
+}
+.card img:hover{
+    transform: rotate(180deg);
+    margin: auto;
+    transition: height 2s, width 2s, 2s ;
+}
+.card img{
+    width: 100%;
+}
+.card h3{
+    font-size: 1.5rem ;
+    font-weight: 700;
+    padding: 20px 0px;
+}
+.card h4{
+    font-size: 1.2rem;
+    padding-bottom: 15px;
+}
+.container-4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    gap: 70px;
+    margin-top: 100px;
+}
+.gear-box h2{
+    font-size: 2rem;
+    color: var(--text-primary-color);
+}
+.gear-box p{
+    color: var(--text-primary-color);
+    padding: 20px 0px;
+}
+
+footer{
+    background-color: rgb(3, 3, 31);
+    text-align: center;
+    color: aqua;
+    height: 300px;
+    padding-top: 150px;
+}
+footer p{
+    padding: 5px;
+}
+
+.socile-media img{
+    width: 45px;
+    height: 45px;
+    margin-right: 5px;
+}
+.socile-media{
+    padding-top: 20px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 30px;
+        padding: 20px 0px 20px 60px;
+    }
+    header {
+        width: 100%;
+    }
+
+    /* banner div */
+    .container {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 30px;
+    }
+    .banner-div-1 h2{
+        text-align: center;
+        padding-top: 40px;
+    }
+    .banner-div-1 p{
+        text-align: center;
+    }
+
+    .btn-primary {
+        width: 120px;
+        margin-left: 30%;
+    }
+
+    /* brand icon */
+    .container-2 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 100px;
+        padding: 20px;
+        
+    }
+    /* main section */
+    .container-3{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+        
+    }
+    .container-4{
+        flex-direction: column-reverse;
+    }
+
+}
